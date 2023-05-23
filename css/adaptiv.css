@@ -169,6 +169,7 @@
         margin-bottom: 0px;
     }
     div.tarifs_blocks{
+        max-width: 100%;
         padding-left: 5%;
         width: 100%;
         overflow: auto;
@@ -192,6 +193,7 @@
         height: 50px;
     }
     div.sites{
+        max-width: 100%;
         padding-left: 5%;
         width: 96%;
         overflow: auto;
