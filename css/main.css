@@ -1,3 +1,7 @@
+body,html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 div.main_head{
     /*height: 50px;*/
     width: 1185px;
