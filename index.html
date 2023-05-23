@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptiv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Abril+Fatface&family=Fira+Sans+Extra+Condensed:wght@500;700&family=Montserrat:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>ALKK</title>
+</head>
+<body>
+    <header>
+        <div class="main_head">
+            <div class="logo">
+                <div class="logo_img">
+                    <img src="src/alkk_logo.svg" alt="">
+                </div>
+                <div class="logo_txt">
+                    Интернет-<br/>
+                    агенство
+                </div>
+            </div>
+            <div class="main_head__links">
+                <a href="">Акции&nbsp;  /</a>
+                <a href="">&nbsp;    О компании&nbsp;    /</a>
+                <a href="">&nbsp;    Контакты</a>
+            </div>
+            <div class="main_head__number">
+               <p>8 (444) 123-17-18</p> 
+            </div>
+        </div>
+        <div class="btt_links">
+            <a href="#">Продвижение сайтов</a>
+            <a href="#">Создание сайтов</a>
+            <a href="#">Контекстная реклама</a>
+        </div>
+        <div class="header_bg"></div>
+    </header>
+    <section class="prodvizhenie">
+        <div class="prodvizhenie_header">
+           <h2><span>Продвижение</span>  сайтов</h2>
+           <img class="fire" src="src/fire.png" alt="">
+        </div>
+        <div class="calculator">
+            <h3>Калькулятор</h3>
+            <div class="calc_form">
+                <div class="inputsi">
+                    <div class="btt_selects">
+                        <select name="" id="">
+                            <option selected>Регион</option>
+                            <option value="">Снов</option>
+                            <option value="">Снов</option>
+                            <option value="">Снов</option>
+                        </select>
+                        <select name="" id="">
+                            <option selected>Поиск. сист.</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <select name="" id="">
+                            <option selected>Тематика</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="top_input">
+                        <input id="4" type="checkbox" class="prodvig">
+                        <label class="top_inp_text" for="#4">
+                            Сайт продвигается 
+                        </label>
+                    </div>
+                </div>
+                <div class="polzunok">
+                    <div class="polz_text">
+                        <p>Цена</p>
+                        <p id="cena"></p>
+                    </div>
+                    <input type="range" min="0" max="21000" step="100"  id="polz" >
+                    <script type="text/javascript">
+                        var cenatxt = document.getElementById("cena");
+                        cenatxt.innerText = `${document.getElementById("polz").value} руб./месяц`;
+                        document.getElementById("polz").addEventListener("mousemove", function() {
+                            var val = (this.value*100)/21000;
+                            this.style = `background: -webkit-linear-gradient(left, #fff 0%, #ff0404 ${val}%, #F5F7F9 ${val}%, #F5F7F9 100%)`;
+                            cenatxt.innerText = `${document.getElementById("polz").value} руб./месяц`;
+                        });
+                        
+                    </script>
+                    <p class="but">
+                       <button>Рассчитать</button> 
+                    </p>
+                </div>
+            </div>
+            <div class="prod_3month">
+                <h3><span>План продвижения</span>  на 3 месяца</h3>
+                <div class="prod_blocks">
+                    <div class="prod_block">
+                        <p>1 мес.</p>
+                        <li><span>Общий аудит сайта</span> </li>
+                        <li><span>Создание резервной копии сайта</span> </li>
+                        <li><span>Поиск и устранение дублей сайта</span> </li>
+                        <li><span>Поиск и удаление битых ссылок</span> </li>
+                        <li><span>Пропишем тег &lt;link rel="canonical"&gt;</span> </li>
+                        <li><span>Создадим XML-карту сайта</span> </li>
+                    </div>
+                    <div class="prod_block">
+                        <p>2 мес.</p>
+                        <li><span>Общий аудит сайта</span> </li>
+                        <li><span>Создание резервной копии сайта</span> </li>
+                        <li><span>Поиск и устранение дублей сайта</span> </li>
+                        <li><span>Поиск и удаление битых ссылок</span> </li>
+                        <li><span>Пропишем тег &lt;link rel="canonical"&gt;</span> </li>
+                    </div>
+                    <div class="prod_block">
+                        <p>3 мес.</p>
+                        <li><span>Общий аудит сайта</span> </li>
+                        <li><span>Создание резервной копии сайта</span> </li>
+                        <li><span>Поиск и устранение дублей сайта</span> </li>
+                        <li><span>Поиск и удаление битых ссылок</span> </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="tarify">
+        <h2>
+            Сравнение тарифов
+        </h2>
+        <div class="big_table">
+            <div class="columns">
+                <div class="column">Продвинутый</div>
+                <div class="column">Комплексный</div>
+                <div class="column">Оптимизация</div>
+                <div class="column">Потрясающий</div>
+            </div>
+            <div class="head_table">
+                <h3>
+                    Глубокий анализ
+                </h3>
+            </div>
+            <div class="head_line">
+                <div class="head_line__text">
+                    <div class="head_line_h">
+                        Общий аудит сайта
+                    </div>
+                    <div class="head_line_txt">
+                        SEO, юзабилити, тексты. Пример аудита
+                    </div>
+                </div>
+                <div class="galki">
+                    <div class="galka">✓</div>
+                    <div class="galka">✓</div>
+                    <div class="galka"><span>✓</span> </div>
+                    <div class="galka"><span>✓</span> </div>
+                </div>
+            </div>
+            <div class="head_line">
+                <div class="head_line__text">
+                    <div class="head_line_h">
+                        Общий аудит сайта
+                    </div>
+                    <div class="head_line_txt">
+                        Определим основных конкурентов, их преимущества и недостатки, выстроим стратегию продвижения, без предоставления отчета
+                    </div>
+                </div>
+                <div class="galki">
+                    <div class="galka">✓</div>
+                    <div class="galka">✓</div>
+                    <div class="galka"><span>✓</span> </div>
+                    <div class="galka"><span>✓</span> </div>
+                </div>
+            </div>
+            <div class="head_line lastline">
+                <div class="head_line__text">
+                    <div class="head_line_h">
+                        Составление семантического ядра                    
+                    </div>
+                    <div class="head_line_txt">
+                        Страхуем себя и ваш сайт, чтобы ничего не пострадало. Копию храним до 3 месяцев
+                    </div>
+                </div>
+                <div class="galki">
+                    <div class="galka"><span>✓</span> </div>
+                    <div class="galka"><span>✓</span> </div>
+                    <div class="galka">✓</div>
+                    <div class="galka">✓</div>
+                </div>
+            </div>
+            <div class="head_table blue">
+                <h3>
+                    Работа с ключевыми словами                
+                </h3>
+            </div>
+            <div class="head_line">
+                <div class="head_line__text">
+                    <div class="head_line_h">
+                        Составление семантического ядра
+                    </div>
+                    <div class="head_line_txt">
+                        Cписок ключевых слов, по которым будем<br/> продвигать сайт
+                    </div>
+                </div>
+                <div class="galki">
+                    <div class="galka"><span>✓</span></div>
+                    <div class="galka">✓</div>
+                    <div class="galka"><span>✓</span> </div>
+                    <div class="galka"><span>✓</span> </div>
+                </div>
+            </div>
+            <div class="head_line lastline">
+                <div class="head_line__text">
+                    <div class="head_line_h">
+                        Кластеризация ключевых слов и <br/>составление карты релевантности
+                    </div>
+                    <div class="head_line_txt">
+                        Распределим, какие страницы по каким запросам будем продвигать
+                    </div>
+                </div>
+                <div class="galki">
+                    <div class="galka"><span>✓</span></div>
+                    <div class="galka"><span>✓</span></div>
+                    <div class="galka"><span>✓</span> </div>
+                    <div class="galka"><span>✓</span> </div>
+                </div>
+            </div>
+            <div class="columns ceni">
+                <div class="column"><p>30 680 ₽</p> </div>
+                <div class="column"><p>21 590 ₽</p> </div>
+                <div class="column"><p>21 590 ₽</p> </div>
+                <div class="column"><p>13 500 ₽</p> </div>
+            </div>
+            <div class="columns buttons">
+                <div class="column"><p><button>Выбрать</button></p></div>
+                <div class="column"><p><button>Выбрать</button></p></div>
+                <div class="column"><p><button>Выбрать</button></p></div>
+                <div class="column"><p><button>Выбрать</button></p></div>
+            </div>
+        </div>
+    </section>
+    <section class="zayavka"> 
+        <h2>Форма заявки</h2>
+        <form id="zayavka">
+            <div class="inputs">
+                <div class="input"><input type="text" placeholder="Имя"></div>
+                <div class="input"><input type="text" placeholder="Имя"></div>
+                <div class="input"><input type="text" placeholder="Имя"></div>
+                <div class="input"><input type="text" placeholder="Имя"></div>
+            </div>
+            <div class="send_butt">
+                <div class="galochka">
+                    <input id="5" type="checkbox" class="prodvig">
+                    <label class="galochkatxt" for="#5">
+                        Нажимая на кнопку, вы соглашаетесь 
+                        с нашей политикой обработки
+                    </label>
+                </div>
+                <div class="input">
+                    <div class="but_send">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="people">
+        <div class="blocks_people">
+            <div class="block_people">
+                <div class="block_people_img">
+                    <img src="src/people.png" alt="">
+                </div>
+                <div class="block_people_txt">
+                    <div class="block_people_h">
+                        Заголовок #1
+                    </div>
+                    <div class="block_people_p">
+                        Небольшое описание<br/>
+                        в 2 строчки
+                    </div>
+                </div>
+            </div>
+            <div class="block_people">
+                <div class="block_people_img">
+                    <img src="src/people.png" alt="">
+                </div>
+                <div class="block_people_txt">
+                    <div class="block_people_h">
+                        Заголовок #2
+                    </div>
+                    <div class="block_people_p">
+                        Небольшое описание<br/>
+                        в 2 строчки
+                    </div>
+                </div>
+            </div>
+            <div class="block_people">
+                <div class="block_people_img">
+                    <img src="src/people.png" alt="">
+                </div>
+                <div class="block_people_txt">
+                    <div class="block_people_h">
+                        Заголовок #3
+                    </div>
+                    <div class="block_people_p">
+                        Небольшое описание<br/>
+                        в 2 строчки
+                    </div>
+                </div>
+            </div>
+            <div class="block_people">
+                <div class="block_people_img">
+                    <img src="src/people.png" alt="">
+                </div>
+                <div class="block_people_txt">
+                    <div class="block_people_h">
+                        Заголовок #4
+                    </div>
+                    <div class="block_people_p">
+                        Небольшое описание<br/>
+                        в 2 строчки
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tarifs">
+        <h2>
+            Тарифы
+        </h2>
+        <div class="tarifs_blocks">
+            <div class="tarif_block fst">
+                <div class="tarif_h">
+                    Продвижение по<br/>
+                    позициям
+                </div>
+                <div class="tarif_img">
+                    <img src="src/machine.png" alt="">
+                </div>
+                <div class="tarif_p">
+                    Продвинем 10 сылок<br/>
+                    на первые места
+                </div>
+                <div class="tarif_cena">
+                    15000 руб
+                </div>
+                <div class="tarif_but">
+                    <button>Оставить заявку</button>
+                </div>
+            </div>
+            <div class="tarif_block scd">
+                <div class="tarif_h">
+                    Продвижение по<br/>
+                    трафику
+                </div>
+                <div class="tarif_img">
+                    <img src="src/comp.png" alt="">
+                </div>
+                <div class="tarif_p">
+                    Продвинем 10 сылок<br/>
+                    на первые места
+                </div>
+                <div class="tarif_cena">
+                    15000 руб
+                </div>
+                <div class="tarif_but">
+                    <button>Оставить заявку</button>
+                </div>
+            </div>
+            <div class="tarif_block td">
+                <div class="tarif_h">
+                    Продвижение по<br/>
+                    лидам
+                </div>
+                <div class="tarif_img">
+                    <img src="src/machine.png" alt="">
+                </div>
+                <div class="tarif_p">
+                    Продвинем 10 сылок<br/>
+                    на первые места
+                </div>
+                <div class="tarif_cena">
+                    15000 руб
+                </div>
+                <div class="tarif_but">
+                    <button>Оставить заявку</button>
+                </div>
+            </div>
+            <div class="tarif_block fch">
+                <div class="tarif_h">
+                    Продвижение по<br/>
+                    KPI
+                </div>
+                <div class="tarif_img">
+                    <img src="src/comp.png" alt="">
+                </div>
+                <div class="tarif_p">
+                    Продвинем 10 сылок<br/>
+                    на первые места
+                </div>
+                <div class="tarif_cena">
+                    15000 руб
+                </div>
+                <div class="tarif_but">
+                    <button>Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <h2>
+            Н2 - ПОРТФОЛИО САЙТОВ
+        </h2>
+        <div class="sites">
+            <div class="site">
+                <div class="site_img">
+                    <p>
+                       <img src="src/p1.png" alt=""> 
+                    </p>
+                </div>
+                <div class="site_h">
+                    Продвижение<br/>
+                    по позициям
+                </div>
+                <div class="site_p">
+                    ecutools.ru
+                </div>
+            </div>
+            <div class="site">
+                <div class="site_img">
+                    <p>
+                       <img src="src/p2.png" alt=""> 
+                    </p>
+                </div>
+                <div class="site_h">
+                    Продвижение<br/>
+                    по позициям
+                </div>
+                <div class="site_p">
+                    ecutools.ru
+                </div>
+            </div>
+            <div class="site">
+                <div class="site_img">
+                    <p>
+                       <img src="src/p3.png" alt=""> 
+                    </p>
+                </div>
+                <div class="site_h">
+                    Продвижение<br/>
+                    по позициям
+                </div>
+                <div class="site_p">
+                    ecutools.ru
+                </div>
+            </div>
+            <div class="site">
+                <div class="site_img">
+                    <p>
+                       <img src="src/p4.png" alt=""> 
+                    </p>
+                </div>
+                <div class="site_h">
+                    Продвижение<br/>
+                    по позициям
+                </div>
+                <div class="site_p">
+                    ecutools.ru
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_content">
+            <div class="footer_logo">
+                <img src="src/footer_logo.png" alt="">
+            </div>
+            <div class="footer_blocks">
+                
+                <div class="footer_block">
+                    <div class="footer_block_h">
+                        Продвижение сайтов
+                    </div>
+                    <div class="hr_line">
+                        <hr width="34">
+                    </div>
+                    <div class="footer_block_li">
+                        <li>По позициям</li>
+                        <li>По трафику</li>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <div class="footer_block_h">
+                        Создание сайтов
+                    </div>
+                    <div class="hr_line">
+                        <hr width="34">
+                    </div>
+                    <div class="footer_block_li">
+                        <li>Визитки</li>
+                        <li>Каталог</li>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <div class="footer_block_h">
+                        Контекстная реклама 
+                    </div>
+                    <div class="hr_line">
+                        <hr width="34">
+                    </div>
+                    <div class="footer_block_li">
+                        <li>Яндекс Директ</li>
+                        <li>Google Adwords</li>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="footer_links">
+            <div class="footer_link">
+                с 2021. ALKK
+            </div>
+            <div class="footer_link">
+                Карта сайта
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

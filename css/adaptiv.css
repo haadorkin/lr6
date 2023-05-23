@@ -1,0 +1,241 @@
+@media screen and (max-width: 576px){
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    div.main_head{
+        width: 100%;
+    }
+    div.main_head__links, div.main_head__number{
+        display: none;
+    }
+    div.logo{
+        margin-left: 10px;
+    }
+    div.btt_links{
+        display: none;
+    }
+    div.header_bg{
+        background-size: 100% auto;
+        padding-bottom: 100px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    section.prodvizhenie{
+        padding-top: 40px;
+        background-color: #F5F7F9;
+        padding-bottom: 60px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .fire{
+        display: none;
+    }
+    div.prodvizhenie_header>h2{
+        margin-right: 0px;
+    }
+    h2>span{
+        background: linear-gradient(270deg, rgba(255, 4, 4, 0.65) 0%, rgba(255, 4, 4, 0) 100%);
+        display: block;
+    }
+
+    div.calculator{
+        width: 334px;
+        box-sizing: border-box;
+        padding-top: 35px;
+    }
+    div.calculator>h3{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    div.inputsi{
+        width: 100%;
+        flex-direction: column;
+    }
+    div.btt_selects{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: 140px;
+    }
+    div.btt_selects>select{
+        width: 295.45px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    div.top_input{
+        margin: 20px auto -20px 20px;
+    }
+    div.polzunok{
+        width: 90%;
+    }
+    p.but button{
+        width: 150px;
+        height: 50px;
+    }
+    div.prod_3month h3{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    h3>span{
+        display: block;
+    }
+    div.prod_blocks{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    div.prod_block{
+        width: 90%;
+        padding-bottom: 40px;
+        margin: 0 auto 30px;
+        border-right: none;
+        border-bottom: 2px solid #F0EDEA;
+    }
+    div.prod_block li{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        list-style-position: inside;
+    }
+    div.prod_block:last-child{
+        padding-bottom: 0px;
+    }
+    section.tarify{
+        margin-top: 60px;
+    }
+    section.tarify>h2{
+        font-size: 35px;
+    }
+    div.big_table{
+        width: 95%;
+    }
+    div.column{
+        display: none;
+    }
+    #zayavka{
+        width: 95%;
+        flex-direction: column;
+    }
+    #zayavka>div.inputs{
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+    }
+    div.galochka{
+        width: 95%;
+        justify-content: space-around;
+    }
+    div.send_butt{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    div.blocks_people{
+        width: 95%;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    div.block_people_txt{
+        margin-left: 21px;
+    }
+    div.block_people{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    div.block_people_img img{
+        width: 85px;
+    }
+    div.block_people_h{
+        margin-top: 0px;
+        text-align: left;
+    }
+    div.block_people_p{
+        text-align: left;
+        margin-top: 8px;
+    }
+    div.block_people:last-child{
+        margin-bottom: 0px;
+    }
+    div.tarifs_blocks{
+        padding-left: 5%;
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+        height: 430px;
+    }
+    div.tarif_but{
+        margin: 0 auto;
+    }
+    div.tarif_block{
+        width: 230px;
+        margin-right: 20px;
+        justify-content: space-around;
+    }
+    div.tarif_block>div.tarif_but{
+        width: 230px;
+    }
+    div.tarif_but button{
+        margin: 10px 10px;
+        width: 90%;
+        height: 50px;
+    }
+    div.sites{
+        padding-left: 5%;
+        width: 96%;
+        overflow: auto;
+        white-space: nowrap;
+        height: 430px;        
+    }
+    div.site{
+        width: 230px;
+        margin-right: 20px;
+        justify-content: space-around;        
+    }
+    footer{
+        padding-top: 50px;
+        width: 100%;
+    }
+    div.footer_content{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 5%;
+        align-items: flex-start;
+    }
+    div.footer_blocks{
+        flex-direction: column;
+        align-items:flex-start;
+        margin: 30px -5% 0px;
+    }
+    div.footer_block{
+        width: 210px;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    div.footer_block_h{
+        text-align: left;
+        display: block;
+    }
+    div.footer_block_li li{
+        list-style-position: inside;
+    }
+    footer>hr{
+        width: 95%;
+    }
+    div.footer_links{
+        padding-top: 15px;
+        width: 95%;
+    }
+}
