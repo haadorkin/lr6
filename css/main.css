@@ -722,7 +722,8 @@ div.hr_line hr{
     border: 1px solid #FF0404;
     margin: 30px 0px;
 }
-div.footer_block_li{
+div.footer_block_li a{
+    text-decoration: none;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
